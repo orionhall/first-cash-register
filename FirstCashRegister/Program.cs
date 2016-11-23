@@ -38,6 +38,9 @@ namespace FirstCashRegister
                 // when an if statement is satisfied, the iterator for that denomination, plus a string for the denomination, is added to the result string
                 // while loops are used to determine how many of a particular denomination there are
                 // as a denomination gets added, its value is subtracted from change until it eventually equals zero
+
+                // I would like to add a feature to determine if a denomination is the last denomination, so the result ends with "[...]and [final denomination]
+                
                 if (change >= 0)
                 {
                     // The cash register currently only holds one hundred due to recent thefts
@@ -219,7 +222,7 @@ namespace FirstCashRegister
                 else
                 {
                     Console.WriteLine("That is not a valid response.  Enter 'y' to continue, or 'n' to exit.");
-                    
+                    // This actually just loops back to the beginning again; I haven't decided how I want to loop it back to the continue prompt
                 }
             }
         }
